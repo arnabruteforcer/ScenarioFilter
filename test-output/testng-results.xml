@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Execute Tests" duration-ms="370" started-at="2018-03-19T23:58:54Z" finished-at="2018-03-19T23:58:54Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="MyRunner$RunCukesByFeatureAndCompositionTest1.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:main.MyRunner$RunCukesByFeatureAndCompositionTest1@2a2d45ba]" name="feature" class="main.MyRunner$RunCukesByFeatureAndCompositionTest1"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="First " duration-ms="370" started-at="2018-03-19T23:58:54Z" finished-at="2018-03-19T23:58:54Z">
+      <class name="main.MyRunner$RunCukesByFeatureAndCompositionTest1">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:main.MyRunner$RunCukesByFeatureAndCompositionTest1@2a2d45ba]" name="setUpClass" is-config="true" duration-ms="255" started-at="2018-03-20T05:28:54Z" finished-at="2018-03-20T05:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:main.MyRunner$RunCukesByFeatureAndCompositionTest1@2a2d45ba]" name="feature" duration-ms="18" started-at="2018-03-20T05:28:54Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-20T05:28:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[First feature to test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="FAIL" signature="tearDownClass()[pri:0, instance:main.MyRunner$RunCukesByFeatureAndCompositionTest1@2a2d45ba]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2018-03-20T05:28:54Z" finished-at="2018-03-20T05:28:54Z">
+          <exception class="java.lang.AbstractMethodError">
+            <message>
+              <![CDATA[cucumber.runtime.java.JavaBackend.getSnippet(Lgherkin/formatter/model/Step;Lcucumber/runtime/snippets/FunctionNameGenerator;)Ljava/lang/String;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AbstractMethodError: cucumber.runtime.java.JavaBackend.getSnippet(Lgherkin/formatter/model/Step;Lcucumber/runtime/snippets/FunctionNameGenerator;)Ljava/lang/String;
+	at cucumber.runtime.UndefinedStepsTracker.getSnippets(UndefinedStepsTracker.java:32)
+	at cucumber.runtime.Runtime.getSnippets(Runtime.java:194)
+	at cucumber.runtime.DefaultSummaryPrinter.printSnippets(DefaultSummaryPrinter.java:36)
+	at cucumber.runtime.DefaultSummaryPrinter.print(DefaultSummaryPrinter.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:294)
+	at com.sun.proxy.$Proxy11.print(Unknown Source)
+	at cucumber.runtime.Runtime.printSummary(Runtime.java:132)
+	at cucumber.api.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:78)
+	at main.MyRunner$RunCukesByFeatureAndCompositionTest1.tearDownClass(MyRunner.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AbstractMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- main.MyRunner$RunCukesByFeatureAndCompositionTest1 -->
+    </test> <!-- First  -->
+  </suite> <!-- Execute Tests -->
+</testng-results>

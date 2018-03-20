@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Execute Tests" parallel="tests" verbose="1"
+  configfailurepolicy="continue" thread-count="5">
+
+  <test name="First ">
+    <classes>
+      <class name="main.MyRunner" />
+    </classes>
+  </test>
+  <!--<!- -->
+  <!--<test name="Second ">-->
+    <!--<classes>-->
+      <!--<class name="main.MyRunner" />-->
+    <!--</classes>-->
+  <!--</test>-->
+  <!--&#45;&#45;!>-->
+</suite>
